@@ -101,9 +101,3 @@ body {
     transform: rotate(360deg);
   }
 }
-.rotate-container {
-  display: inline-block;
-}
-.rotate-image {
-  animation: rotate 2s linear infinite; /* Aplica la animación de rotación */
-}
