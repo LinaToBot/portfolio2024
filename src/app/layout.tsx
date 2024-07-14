@@ -1,10 +1,13 @@
+// Libraries.
 import type { Metadata } from "next";
+// Fonts.
 import { Inter } from "next/font/google";
+// Components.
+import { Header } from "./components/Header/Header";
 // Styles.
 import "./styles/globals.css";
 import "./features/features.css";
 import "./components/AnimatedGrid/styles.css";
-import { Header } from "./components/Header/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
