@@ -1,7 +1,7 @@
 // Components.
 import { Header } from "./components/Header/Header";
 import { Intro } from "./features/Intro";
-import { Animations } from "./features/Animations";
+import { AnimationsSection } from "./features/AnimationsSection";
 import { ContactMe } from "./features/ContactMe";
 
 export default function Home() {
@@ -12,7 +12,7 @@ export default function Home() {
       </div>
       <main className="flex bg-[#cccc] min-h-screen flex-col items-center justify-between mt-[4.5rem] mx-[3.5rem] md: mx-[10rem] my-[2rem]">
         <Intro />
-        <Animations />
+        <AnimationsSection />
         <ContactMe />
       </main>
     </>
