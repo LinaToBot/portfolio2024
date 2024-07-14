@@ -1,5 +1,7 @@
-import next from "../../../public/next.svg";
+// Libraries.
 import Image from "next/image";
+// Public.
+import next from "../../../public/next.svg";
 
 export const Intro = () => {
   return (

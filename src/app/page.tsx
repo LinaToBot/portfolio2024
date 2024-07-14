@@ -1,6 +1,5 @@
-import Image from "next/image";
+// Components.
 import { Header } from "./components/Header/Header";
-import vercel from "/public/vercel.svg";
 import { Intro } from "./features/Intro";
 import { Animations } from "./features/Animations";
 
