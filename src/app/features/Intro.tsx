@@ -3,17 +3,17 @@ import Image from "next/image";
 // Public.
 import next from "../../../public/next.svg";
 
-export const Intro = () => {
+export const Intro: React.FC = () => {
   return (
-    <section className="flex flex-col h-screen items-center mx-[5rem] md:flex-row md:space-x-4 bg-[#8bbee3]">
-      <div className="w-full text-justify md: text-left mb-0 w-2/2">
-        <h1 className="text-[3rem]">Hi there!!</h1>
-        <p>
+    <section className="section-basic-styles1">
+      <div className="w-full text-justify md:text-left mb-0 w-2/2">
+        <h1 className="space-grotesk text-[3rem] font-[700] ">Hi there!!</h1>
+        <p className="roboto-mono">
           I`m a Front-end Developer and I have combined the skills acquired from
           my first career and my software experience to enhance the quality and
           user experience of our products.
         </p>
-        <p>
+        <p className="roboto-mono">
           On this site, you can check out my experience and achievements in
           development and video game design.
         </p>

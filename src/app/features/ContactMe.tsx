@@ -3,11 +3,11 @@ import Image from "next/image";
 // Public.
 import next from "../../../public/next.svg";
 
-export const ContactMe = () => {
+export const ContactMe: React.FC = () => {
   return (
-    <section className="flex flex-col h-screen items-center mx-[5rem] md:flex-row md:space-x-4 bg-[#e3d68b]">
-      <div className="w-full text-justify md: text-left mb-0 w-2/2">
-        <h2 className="text-[2.5rem]">ContactMe</h2>
+    <section className=" section-basic-styles1">
+      <div className="w-full text-justify md:text-left mb-0 w-2/2">
+        <h2 className="space-grotesk text-[2.5rem] font-[600]">ContactMe</h2>
         <p>
           I`m a Front-end Developer and I have combined the skills acquired from
           my first career and my software experience to enhance the quality and

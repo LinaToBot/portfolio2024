@@ -4,7 +4,7 @@ import Link from "next/link";
 // Public.
 import vercel from "../../../../public/vercel.svg";
 
-export const Header = () => {
+export const Header: React.FC = () => {
   const linkedinUrl = "https://www.linkedin.com/in/paulina-i-5a7174ba/";
   return (
     <nav className="flex justify-between w-full p-[.0025rem]">

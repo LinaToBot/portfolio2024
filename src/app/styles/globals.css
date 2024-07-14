@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Fonts */
 @font-face {
   font-family: "Space Grotesk";
   src: url("/ruta/a/space-grotesk.woff2") format("woff2"),
@@ -9,10 +10,21 @@
   font-weight: normal;
   font-style: normal;
 }
-
 .space-grotesk {
   font-family: "Space Grotesk", sans-serif;
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  font-style: normal;
   font-weight: 400;
+  src: url("https://fonts.gstatic.com/s/robotomono/v9/L0x5DF4xlVMF-BfR8bXMIjPNfKCWmw.woff2")
+      format("woff2"),
+    url("https://fonts.gstatic.com/s/robotomono/v9/L0x5DF4xlVMF-BfR8bXMIjPNfKCWmw.woff")
+      format("woff");
+}
+.roboto-mono {
+  font-family: "Roboto Mono", monospace;
 }
 
 :root {
@@ -45,17 +57,20 @@ body {
     top: 0;
     left: 0;
   }
+  main {
+    margin: 3rem 0 3rem 0;
+  }
+
+  ::selection {
+    background-color: #9414ff;
+
+    color: #fff;
+  }
 }
 
-/* body {
-  color: rgb(var(--foreground-rgb));
-  background: radial-gradient(
-    circle,
-    rgb(var(--background-start-rgb)) 0%,
-    rgb(var(--background-end-rgb)) 100%
-  );
-  /* Ajusta los valores de color según tus preferencias 
-} */
+.titles-color {
+  color: #9414ff;
+}
 
 @layer utilities {
   .text-balance {
@@ -63,18 +78,32 @@ body {
   }
 }
 
+/*  animations */
 @keyframes blink {
-  0% {
-    opacity: 1;
+  0%,
+  100% {
+    opacity: 0.3;
   }
   50% {
-    opacity: 0;
-  }
-  100% {
     opacity: 1;
   }
 }
 
 .blinking {
-  animation: blink 3s infinite;
+  animation: blink 5s infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.rotate-container {
+  display: inline-block;
+}
+.rotate-image {
+  animation: rotate 2s linear infinite; /* Aplica la animación de rotación */
 }
