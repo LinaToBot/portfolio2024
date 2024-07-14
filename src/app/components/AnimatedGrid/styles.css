@@ -1,3 +1,5 @@
+/* Styles for AnimatedGrid component */
+
 @keyframes diagonalMove {
   0% {
     transform: translateX(-3rem) translateY(-3rem);
