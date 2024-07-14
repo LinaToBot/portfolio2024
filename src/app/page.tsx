@@ -2,6 +2,7 @@
 import { Header } from "./components/Header/Header";
 import { Intro } from "./features/Intro";
 import { Animations } from "./features/Animations";
+import { ContactMe } from "./features/ContactMe";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
       <main className="flex bg-[#cccc] min-h-screen flex-col items-center justify-between mt-[4.5rem] mx-[3.5rem] md: mx-[10rem] my-[2rem]">
         <Intro />
         <Animations />
-        <Animations />
+        <ContactMe />
       </main>
     </>
   );

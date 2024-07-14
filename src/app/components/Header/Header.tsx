@@ -1,7 +1,7 @@
 // Libraries.
 import Image from "next/image";
 import Link from "next/link";
-// public
+// Public.
 import vercel from "../../../../public/vercel.svg";
 
 export const Header = () => {
