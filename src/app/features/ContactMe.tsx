@@ -16,7 +16,7 @@ export const ContactMe: React.FC = () => {
         </h2>
         <p className="roboto-mono mb-[1rem]">
           If you want to talk to me about development or front-end, I invite you
-          to visit my
+          to visit my{" "}
           <a
             className="highlight-text"
             href={linkedinUrl}
@@ -47,7 +47,7 @@ export const ContactMe: React.FC = () => {
             rel="noopener noreferrer"
           >
             Github
-          </a>
+          </a>{" "}
           to start a joint project.
         </p>
       </div>
