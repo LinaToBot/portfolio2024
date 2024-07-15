@@ -5,10 +5,12 @@
   width: 50rem;
   align-items: center;
   padding: 3rem;
+  background-color: transparent;
 }
 
 @media (max-width: 767px) {
   .section-basic-styles1 {
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     height: auto;
@@ -19,6 +21,7 @@
 }
 
 .section-basic-styles2 {
+  background-color: transparent;
   display: flex;
   flex-direction: column;
   height: 190vh;
@@ -34,6 +37,7 @@
 
 @media (max-width: 767px) {
   .section-basic-styles2 {
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     height: auto;
