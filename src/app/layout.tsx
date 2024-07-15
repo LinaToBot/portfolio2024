@@ -6,7 +6,7 @@ import { Inter } from "next/font/google";
 import { Header } from "./components/Header/Header";
 // Styles.
 import "./styles/globals.css";
-import "./features/features.css";
+import "./features/styles-features.css";
 import "./components/AnimatedGrid/styles.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -24,9 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className}  min-w-screen h-screen`}>
-        <div className=" header flex justify-start px-[7rem] py-[1rem] m-0">
-          <Header />
-        </div>
+        <Header />
         {children}
       </body>
     </html>

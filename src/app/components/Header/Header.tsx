@@ -2,30 +2,38 @@
 import Image from "next/image";
 import Link from "next/link";
 // Public.
-import vercel from "../../../../public/vercel.svg";
+import IN from "../../../../public/linkedin.svg";
 
 export const Header: React.FC = () => {
   const linkedinUrl = "https://www.linkedin.com/in/paulina-i-5a7174ba/";
+
   return (
-    <nav className="flex justify-between w-full p-[.0025rem]">
-      <ul className="flex mr-[1rem]">
+    <nav className="header px-[7rem]">
+      <ul className="diagonal-borders-global">
         <li className="space-grotesk">
-          <Link href="/">Lina2Bot</Link>
+          <Link href="/" className="font-[900] italic">
+            Lina2Bot
+          </Link>
         </li>
       </ul>
       {/* aqui faltaria adaptaplo a celular  */}
-      <div className="flex justify-between w-[12rem]">
-        <p>Celular</p>
-        <a href={linkedinUrl} target="_blank" rel="noopener noreferrer">
+      <div className="flex gap-[1rem] align-center w-[12rem] pt-[1rem]">
+        <p className="justify-between align-center"></p>
+        {/* <a
+          className=""
+          href={linkedinUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Image
-            src={vercel}
-            alt="Vercel Logo"
-            className="dark:invert cursor-pointer"
-            width={100}
+            src={IN}
+            alt="LinkedIn icon"
+            className=""
+            width={24}
             height={24}
             priority
           />
-        </a>
+        </a> */}
       </div>
     </nav>
   );
