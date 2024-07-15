@@ -1,3 +1,4 @@
+// Libraries.
 import Image from "next/image";
 // Icon.
 import icon from "../../favicon.ico";

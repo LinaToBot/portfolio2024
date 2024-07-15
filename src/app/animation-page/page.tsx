@@ -3,7 +3,7 @@ const Page: React.FC = () => {
     <>
       <main className="">
         <div>
-          <h1 className="color-[#fff]">Hello, Dashboard Page!</h1>
+          <h1 className="color-[#fff]">Animation Page!</h1>
         </div>
       </main>
     </>

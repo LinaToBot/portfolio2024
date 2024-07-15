@@ -1,7 +1,7 @@
 // Libraries.
 import Image from "next/image";
 // Public.
-import next from "../../../public/puzzle-human-head.png";
+import faceIcon from "../../../public/puzzle-human-head.png";
 
 export const ContactMe: React.FC = () => {
   const linkedinUrl = "https://www.linkedin.com/in/paulina-i-5a7174ba/";
@@ -16,7 +16,7 @@ export const ContactMe: React.FC = () => {
         </h2>
         <p className="roboto-mono mb-[1rem]">
           If you want to talk to me about development or front-end, I invite you
-          to visit my{" "}
+          to visit my
           <a
             className="highlight-text"
             href={linkedinUrl}
@@ -47,14 +47,14 @@ export const ContactMe: React.FC = () => {
             rel="noopener noreferrer"
           >
             Github
-          </a>{" "}
+          </a>
           to start a joint project.
         </p>
       </div>
       <div className=" w-full p-4 md: w-1/2 flex justify-center p-4 ">
         <Image
-          src={next}
-          alt="Vercel Logo"
+          src={faceIcon}
+          alt="face icon"
           className="dark:invert cursor-pointer"
           width={200}
           height={200}

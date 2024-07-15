@@ -1,7 +1,7 @@
 // Libraries.
 import Image from "next/image";
 // Public.
-import next from "../../../public/puzzle-14.gif";
+import gif from "../../../public/puzzle-14.gif";
 
 export const Intro: React.FC = () => {
   return (
@@ -18,14 +18,7 @@ export const Intro: React.FC = () => {
         </p>
       </div>
       <div className=" w-full p-4 md: w-1/2 flex justify-center p-4 ">
-        <Image
-          src={next}
-          alt="Vercel Logo"
-          // className="dark:invert cursor-pointer"
-          width={250}
-          height={200}
-          priority
-        />
+        <Image src={gif} alt="saying hello" width={250} height={200} priority />
       </div>
     </section>
   );

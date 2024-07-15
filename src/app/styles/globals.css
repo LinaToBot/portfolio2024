@@ -28,22 +28,24 @@
 }
 
 :root {
-  /* --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 0, 0, 0;
-  --background-end-rgb: 0, 0, 0; */
+  --background-start: 0, 0, 0;
+  --foreground-rgb: 255, 255, 255;
+  --primary-color: #6a00ff;
+  --highlight-color: #bcff14;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --primary-color: #6a00ff;
+    --highlight-color: #bcff14;
+    --background-start: 0, 0, 0;
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
   }
 }
 
 body {
-  background-color: #000;
-  color: #fff;
+  background-color: rgb(var(--background-start));
+  color: rgb(var(--foreground-rgb));
   .header {
     display: flex;
     justify-content: space-between;
@@ -54,21 +56,20 @@ body {
     z-index: 1000;
     top: 0;
     left: 0;
-    color: #fff;
+    color: rgb(var(--foreground-rgb));
   }
   main {
     margin: 3rem 0 3rem 0;
   }
 
   ::selection {
-    background-color: #6a00ff;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: rgb(var(--foreground-rgb));
   }
 }
 
 .highlight-text {
-  /* color: #9414ff; */
-  color: #bcff14;
+  color: var(--highlight-color);
   font-weight: 900;
 }
 
@@ -108,6 +109,6 @@ body {
   align-items: center;
   width: 10rem;
   height: 3rem;
-  background-color: #6a00ff;
+  background-color: var(--primary-color);
   clip-path: polygon(25% 0%, 100% 0, 75% 100%, 0 100%);
 }

@@ -1,7 +1,6 @@
 // Libraries.
 import Link from "next/link";
 // Components.
-import { AnimatedGrid } from "../components/AnimatedGrid/AnimatedGrid";
 import { GridLayout } from "../components/Grid/Grid";
 
 export const ProjectsSection: React.FC = () => {

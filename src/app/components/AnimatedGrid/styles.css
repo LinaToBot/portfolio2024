@@ -60,7 +60,7 @@
     display: inline-block;
   }
   .rotate-image {
-    animation: rotate 2s linear infinite; /* Aplica la animación de rotación */
+    animation: rotate 2s linear infinite;
   }
 }
 
