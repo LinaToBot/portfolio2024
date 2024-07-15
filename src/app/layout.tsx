@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className}  min-w-screen h-screen`}>
+      <body className={`${inter.className}  min-w-screen h-[100%]`}>
         <Header />
         {children}
       </body>
