@@ -27,7 +27,7 @@ export const Header: React.FC = () => {
         >
           <Image
             src={IN}
-            alt="LinkedIn icon"
+            alt="LinkedIn icon" 
             className=""
             width={24}
             height={24}
