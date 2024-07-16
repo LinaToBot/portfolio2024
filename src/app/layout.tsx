@@ -5,7 +5,7 @@ import { Inter } from "next/font/google";
 // Components.
 import { Header } from "./components/Header/Header";
 // Styles.
-import "./styles/globals.css";
+import "./globals.css";
 import "./features/styles-features.css";
 import "./components/AnimatedGrid/styles.css";
 
